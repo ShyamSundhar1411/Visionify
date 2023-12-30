@@ -1,0 +1,1 @@
+CIFAR_CLASSES = ["airplanes","cars", "birds", "cats", "deer", "dogs", "frogs", "horses", "ships","trucks"]
