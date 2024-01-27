@@ -12,7 +12,7 @@ const NavBarComponent = () => {
             <Toolbar>
                 <Box 
                     component="img"
-                    sx={{ height: 30, width: 30, marginRight:2 }}
+                    sx={{ height: 50, width: 50, marginRight:2 }}
                     src={Logo}
                     alt="Visionify Logo"
 

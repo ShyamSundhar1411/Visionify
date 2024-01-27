@@ -1,12 +1,16 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
-import ImageUpload from '../components/ImageUploadComponent';
+import React from "react";
+import { styled } from "@mui/material/styles";
+import { Container, Typography } from "@mui/material";
+
+
+
 const LandingPage = () => {
   return (
-    <>
-      <div>Landing Page</div>
-      <ImageUpload />
-    </>
+    <section className="hero">
+      <div className="content">
+        <Typography variant="h1">Visionify</Typography>
+      </div>
+    </section>
   );
 };
 
