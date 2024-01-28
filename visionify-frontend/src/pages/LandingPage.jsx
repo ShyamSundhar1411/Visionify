@@ -1,16 +1,15 @@
 import React from "react";
-import { styled } from "@mui/material/styles";
-import { Container, Typography } from "@mui/material";
-
+import HeroComponent  from "../components/HeroComponent";
+import CapabilitiesComponent from "../components/CapabalitiesComponent";
 
 
 const LandingPage = () => {
   return (
-    <section className="hero">
-      <div className="content">
-        <Typography variant="h1">Visionify</Typography>
-      </div>
-    </section>
+    <>
+      <HeroComponent />
+      <CapabilitiesComponent />
+    </>
+    
   );
 };
 

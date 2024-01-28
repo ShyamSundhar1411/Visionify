@@ -1,14 +1,14 @@
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import Logo  from "../assets/vision.png"
+import { Typography } from '@mui/material';
+import Logo  from "../assets/vision.png";
+import { Link } from 'react-scroll';
 import Box from '@mui/material/Box';
+import { GradientText } from '../styles/Typography';
 
 const NavBarComponent = () => {
     return (
-        <AppBar position="static">
+        <AppBar style={{ background: 'transparent', boxShadow: 'none'}} >
             <Toolbar>
                 <Box 
                     component="img"
@@ -17,18 +17,20 @@ const NavBarComponent = () => {
                     alt="Visionify Logo"
 
                 />
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    Visionify
-                </Typography>
-                <IconButton
-                    size="large"
-                    edge="start"
+                    <GradientText variant="h6" sx={{ flexGrow: 1}}>
+                        Visionify
+                    </GradientText>
+                <Link
+                    to="capabilities"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}  
+                    duration={500}
                     color="inherit"
-                    aria-label="menu"
-                    sx={{ mr: 2 }}
+                    style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}
                 >
-                    <MenuIcon />
-                </IconButton>
+                    <Typography>Capabilities</Typography>
+                </Link>
             </Toolbar>
         </AppBar>
     );
